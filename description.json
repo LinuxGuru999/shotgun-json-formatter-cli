@@ -1,0 +1,23 @@
+{
+  "overview": "JSON Formatter CLI is a small command-line script that reads JSON from standard input or a file, validates it against strict JSON rules, and prints a consistently indented version. It is aimed at developers who want a lightweight formatter for debugging, automation, and review without adding package dependencies. Because it is distributed as a single script, it can be added to local workflows, CI checks, or editor tasks with minimal setup.",
+  "usecases": [
+    "Piping an API response through the script to make nested JSON readable before debugging.",
+    "Validating a configuration file in a pre-commit hook or CI step before it reaches production.",
+    "Reformatting minified JSON copied from logs or another tool into stable, reviewable output."
+  ],
+  "howto": [
+    "Download the script and place it somewhere on your PATH or in your project.",
+    "Run it with a file argument or pipe JSON into it, such as `json-formatter input.json` or `curl ... | json-formatter`.",
+    "Inspect the pretty-printed output or non-zero exit status to catch validation errors."
+  ],
+  "faq": [
+    {
+      "q": "Does it support JSON5, comments, or trailing commas?",
+      "a": "No, it validates strict JSON only and will reject non-standard syntax."
+    },
+    {
+      "q": "Is it a standalone binary with no runtime required?",
+      "a": "No, it is a script, so you still need a compatible runtime installed even though it has no external dependencies."
+    }
+  ]
+}
