@@ -1,0 +1,1 @@
+Download the full package from the GitHub repository: https://github.com/USER/shotgun-json-formatter-cli

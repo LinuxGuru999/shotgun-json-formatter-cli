@@ -1,0 +1,8 @@
+{
+  "name": "json-formatter-cli",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node json-formatter-cli.js"
+  }
+}
